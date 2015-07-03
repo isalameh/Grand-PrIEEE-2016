@@ -27,7 +27,7 @@ static char mapped = 0;
 
 
 
-
+/* comment */
 
 
 /**
@@ -37,6 +37,7 @@ static char mapped = 0;
  */
 int init_mmap() {
 	if(!mapped) {
+        
 		int fd;
 		fd = open("/dev/mem", O_RDWR);
 		if(fd == -1) {
